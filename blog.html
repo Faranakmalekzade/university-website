@@ -85,22 +85,33 @@
             Suscipit sunt laborum odio consequuntur perspiciatis deserunt
             veniam, fugit atque ea quisquam.
           </p>
-          <form class="form">
+          <form class="form" id="comment">
             <h3>Leave a comment</h3>
             <div>
-              <input type="text" name="name" placeholder="Enter Name" />
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter Name"
+                required
+              />
             </div>
             <div>
-              <input type="  text" name="email" placeholder="Enter Emial" />
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter Email"
+                required
+              />
             </div>
             <div>
               <textarea
-                type="text"
+                name="description"
                 placeholder="Your Message"
                 maxlength="80"
+                required
               ></textarea>
             </div>
-            <buttom class="btn"> Post Comment </buttom>
+            <button class="btn" type="submit">Post Comment</button>
           </form>
         </div>
         <div class="blog-right">
@@ -153,5 +164,7 @@
         <p>Made With <i class="fa fa-heart-o"></i> by Easy Tutorial</p>
       </div>
     </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="/script.js"></script>
   </body>
 </html>
